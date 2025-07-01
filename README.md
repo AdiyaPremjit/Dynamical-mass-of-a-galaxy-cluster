@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/65f1bf7c-c479-4d9b-8a76-779c3812c8e6)# Dynamical-mass-of-a-galaxy-cluster
+Dynamical-mass-of-a-galaxy-cluster
 extracting data from the SDSS archive and performing analysis of cluster redshift, characterstic size of cluster an estimating the dynamical mass of the cluster
 
 STEP 1
