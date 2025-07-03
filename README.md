@@ -2,6 +2,7 @@ Dynamical-mass-of-a-galaxy-cluster
 extracting data from the SDSS archive and performing analysis of cluster redshift, characterstic size of cluster an estimating the dynamical mass of the cluster
 
 STEP 1
+
 importing data
 the data from the SDSS archive is extracted using the following SQL query
 SELECT 
@@ -17,23 +18,36 @@ JOIN specObjAll as sz ON sz.bestobjid = s.objid
  
 WHERE s.type=3 and sz.z > 0.05 and sz.z < 0.20
 
+(the following extracted file is added as an excel file in the repository)
+
 STEP 2
+
 to organize the vast astronomical catalog, the data is aggregated
 STEP 3
-the mean redshift, standard redshift and the maximum and minimum limits are extracted
+
+the mean redshift, standard redshift and the maximum and minimum limits are found
+
 STEP 4
-a histogram and a boxplot are used to plot the distribution of the redshit to the frequency
+
+a histogram and a boxplot are plotted to show the distribution of the redshit to the frequency
+
 STEP 5
+
 a new velocity column is created using the formula v=c*z
 where c is the speed of light 
 and z is the redshift
 a histogram is plotted with the velocity and frequency as its axes
 STEP 6
+
 ![image](https://github.com/user-attachments/assets/d849e56d-9a20-4899-8317-96312fc5368b)
 using the above formula, velocity dispersion of the cluster if found
 
 STEP 7
 determining the size and mass of the cluster
 ![image](https://github.com/user-attachments/assets/4c573c2e-410d-4a14-a444-f8de15356d22)
+
+STEP 8
+
+To estimate the consistency of dynamical mass, the estimated uminous mass of the cluster is found and the consistency is verified by ratioing the two values
 
 
